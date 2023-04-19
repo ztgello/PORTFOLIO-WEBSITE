@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="https://i.ibb.co/XVD6857/druidd.gif"/>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+crossorigin="anonymous"
+/>
+    <title>GSUS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,700&family=Goldman&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,700&family=Kdam+Thmor+Pro&display=swap');
+    h1{
+        font-family:"Goldman";
+        font-size: 800%;
+        text-align: center;
+        color: rgb(192, 37, 115);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h2{
+        font-family:"Goldman";
+        font-size: 230%;
+        text-align: center;
+        color: rgb(224, 224, 224);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h8{
+        font-family:"Goldman";
+        font-size: 450%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h6{
+        font-family:"Kdam Thmor Pro";
+        font-size: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h3{
+        font-family:"Kdam Thmor Pro";
+        font-size: 200%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h7{
+        font-family:"Kdam Thmor Pro";
+        font-size: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h5{
+        font-family:"Kdam Thmor Pro";
+        font-size: 100%;
+        text-align: center;
+        color: rgb(153, 0, 255);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h4{
+        font-family:"Kdam Thmor Pro";
+        text-align: center;
+        color: rgb(255, 255, 255);
+        vertical-align: center;
+        text-align: center;
+    }
+    p{
+    text-align: justify;
+    }
+    .navbar-brand{
+        font-family:"Goldman";
+        font-size: 280%;
+        color: rgb(153, 0, 255);
+    }
+    .navbar{
+        background: #000000c4;
+        font-family: "Roboto";
+    }
+    .btn{
+        background: #000000ad;
+        border: transparent;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-family: "Nanum Brush Script";
+        font-size: 150%;
+    }
+    .btn:hover{
+        background: rgb(153, 0, 255);
+        transition: .9s;
+        color: black;
+        border: transparent;
+    }
+    .btn.primary{
+        font-family: "Roboto";
+    }
+    body{
+        background-image: url(https://images8.alphacoders.com/119/1193330.jpg);
+        background-repeat: vertical;
+        background-size: 100% auto;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-link{
+        color: white;
+    }
+    /* .navbar-item>a:hover{
+        background-color: yellow;
+    } */
+    footer{
+        background: #000000;
+        color: white;
+        font-family: "Roboto";
+
+    }
+    .section-class{
+        text-align: left;
+    }
+    .box1 {
+        background-color: rgba(0,0,0,.5);
+        color: #fff;
+    }
+    .carousel { width:340px; height:160px; }
+    .section-class{
+        text-align: left;
+    }
+    .box1 {
+        background-color: rgba(0,0,0,.5);
+        color: #fff;
+    }
+    /* Customize the captcha box */
+		#captcha-box {
+			padding: 20px;
+			background-color: #f5f5f5;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 50px;
+		}
+        .sidenav {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  left: 10px;
+  background: #000000be;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 550px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    </style>
+</head>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<body>
+    <div class="sidenav">
+        <br>
+        <br>
+        <center>
+            <img src="https://i.ibb.co/QNrSknb/jinxlog-removebg-preview.png"
+            width="200px" height="200px">
+        <a class="navbar-brand" href="#"><h8>GSUS</h8></a></center>
+        <center><a> <h7>Online Portfolio</h7></a>
+        <br></center>
+    <center><h7>All processes lead to a rewarding discovery. With it, I am <br>constantly finding new things in the footage and figuring out new <br>ways to tell the story.</h7>
+        <br>
+        </center></p>
+
+        <br>
+        <br>
+        <br>
+        <h5>
+        <center>
+        <a href="index.html">Front</a>
+        <a href="persona.html">Persona</a>
+        <br>
+        <br>
+        Contact<br>
+        gsus@creatives.com
+        </h5>
+    </center>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+    <div class="row text-center no-gutters">
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <div class="col">
+                <h1>GAMING CONTENT</h1>
+
+                <div class="col">
+                    <div class="col">
+                        <br>
+                      <h2>LILYBELLE'S HELL'S KITCHEN VT EDITION</h2>
+                      <iframe width="900" height="515" src="https://www.youtube.com/embed/e1rpAI0oc6k">
+                    </iframe>
+                    <br>
+                      <center>
+                        <div class="card text-white bg-dark mb-3" style="width: 70%;">
+                          <div class="card-header">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">A VIDEO COMMISSION FOR A VTUBER</h5>
+                            <br>
+                            <p class="card-text"><center>A highlights of fun times, as well as rating uncanny food they've tried. </center>
+                              <br>
+                            </div>
+                          </center>
+
+
+                    <br>
+                    <br>
+                    <br>
+                      <h2>LEAGUE OF LEGENDS HIGHLIGHTS</h2>
+                      <iframe width="900" height="515" src="https://www.youtube.com/embed/wPSnqPYQlrc">
+                    </iframe>
+                    <br>
+                      <center>
+                        <div class="card text-white bg-dark mb-3" style="width: 70%;">
+                          <div class="card-header">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">A LEAGUE OF LEGENDS VIDEO COMMISSION</h5>
+                            <br>
+                            <p class="card-text"><center>A highlights of a solo top player who utilizes Aatrox's ability </center>
+                              <br>
+                            </div>
+                          </center>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <h2>GENSHIN ROLLS</h2>
+                      <iframe width="900" height="515" src="https://www.youtube.com/embed/1jiLS5nZhDA">
+                    </iframe>
+                    <br>
+                      <center>
+                        <div class="card text-white bg-dark mb-3" style="width: 70%;">
+                          <div class="card-header">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">GENSHIN IMPACT SUMMON HIGHLIGHTS</h5>
+                            <br>
+                            <p class="card-text"><center>A highlights wherein one must suffer on the consequence of burning primogems. </center>
+                              <br>
+                            </div>
+                          </center>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h2>A VALHEIM SERIES</h2>
+                      <iframe width="900" height="515" src="https://www.youtube.com/embed/C_VddUhxn_Y">
+                    </iframe>
+                    <br>
+                      <center>
+                        <div class="card text-white bg-dark mb-3" style="width: 70%;">
+                          <div class="card-header">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">A HIGHLIGHTS WHERE IT ALL STARTED.</h5>
+                            <br>
+                            <p class="card-text"><center>Fan of norse mythology and VIKINGS? Say no more. </center>
+                              <br>
+                            </div>
+                          </center>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <h1>PROJECTS</h1>
+                    <br>
+              <h2>GUNITA SDE</h2>
+              <iframe width="900" height="515" src="https://www.youtube.com/embed/vNT1jh6gYSM">
+            </iframe>
+            <br>
+
+              <center>
+                <div class="card text-white bg-dark mb-3" style="width: 70%;">
+                  <div class="card-header">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">A SAMPLE OF SDE BUILDUP PART</h5>
+                    <br>
+                    <p class="card-text"><center>A branding agency which aims to create remarkable designs worth celebrating.</center>
+                      <br>
+                    </div>
+                  </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col">
+                <h2>LIGAO LOGO</h2>
+              <iframe src="https://www.youtube.com/embed/gTXUHscBIf4" width="900" height="515" allow="autoplay"></iframe>
+              <br>
+<center>
+    <div class="card text-white bg-dark mb-3" style="width: 70%;">
+      <div class="card-header">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">A VISUAL REPRESENTATION OF HOW LIGAO LOGO WAS MADE</h5>
+        <br>
+        <p class="card-text"><center> What makes the logo truly LIGAO</center>
+          <br>
+        </div>
+      </center>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+    <div class="col">
+        <h2>BURGER MACHINE REVAMP BY MIT</h2>
+      <iframe src="https://www.youtube.com/embed/7cH_c62RluY" width="900" height="515" allow="autoplay"></iframe>
+      <center>
+        <div class="card text-white bg-dark mb-3" style="width: 70%;">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">A SHORT CLIP OF THE BUILD UP PART (HYPE)</h5>
+            <br>
+            <p class="card-text"><center>A showcase of rebranded necessities for Burger Machine made by MIT</center>
+              <br>
+            </div>
+          </center>
+        <br>
+        <br>
+    <br>
+    <br>
+    <br>
+
+      <div class="col">
+        <div class="col">
+          <h2>GUNITA</h2>
+          <iframe width="900" height="515" src="https://www.youtube.com/embed/AQ5JGlH3Irs">
+        </iframe>
+        <br>
+          <center>
+            <div class="card text-white bg-dark mb-3" style="width: 70%;">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">AN SDE VIDEO BRANDING PROPOSAL FOR THE CITY GOVERNMENT OF LIGAO ALBAY</h5>
+                <br>
+                <p class="card-text"><center>A brand design project for a travel agency focused on showcasing the beauty of Ligao Albay.</center>
+                  <br>
+                </div>
+              </center>
+        <br>
+        <br>
+        <br>
+
+
+
+<br>
+
+<div class="col">
+    <h2>INTRODUCING MIT AGENCY</h2>
+  <iframe src="https://www.youtube.com/embed/npljE-t9s20" width="900" height="515" allow="autoplay"></iframe>
+<br>
+
+<center>
+<div class="card text-white bg-dark mb-3" style="width: 70%;">
+<div class="card-header">
+</div>
+<div class="card-body">
+<h5 class="card-title">A SHORT REEL WHICH SHOWCASES THE FINEST WORKS</h5>
+<br>
+<p class="card-text"><center>A video reel which offers clients the best that they could have.</center>
+<br>
+</div>
+</center>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<h1>CINEMATIC </h1>
+<br>
+  <div class="col">
+    <h2>"POTOTOY"</h2>
+  <iframe src="https://www.youtube.com/embed/5KlLBU9715Y" width="900" height="515" allow="autoplay"></iframe>
+<br>
+
+<center>
+<div class="card text-white bg-dark mb-3" style="width: 70%;">
+<div class="card-header">
+</div>
+<div class="card-body">
+<h5 class="card-title">A 30 SECONDS ROTARY PSA ENTRY</h5>
+<br>
+<p class="card-text"><center>A visual representation on how the mind of a child can be exploited by a wolf in a sheep's clothing. </center>
+<br>
+</div>
+</center>
+</div>
+<br>
+<br>
+<br>
+
+<div class="col">
+    <h2>"BASURERO"</h2>
+  <iframe src="https://www.youtube.com/embed/JC0m9a7zNwI" width="900" height="515" allow="autoplay"></iframe>
+<br>
+<center>
+<div class="card text-white bg-dark mb-3" style="width: 70%;">
+<div class="card-header">
+</div>
+<div class="card-body">
+<h5 class="card-title">A 30 SECONDS ROTARY PSA ENTRY</h5>
+<br>
+<p class="card-text"><center>An awareness which aims to make the viewers realize what they throw away always comes back at them. </center>
+<br>
+</div>
+</center>
+</div>
+<br>
+<br>
+<br>
+
+
+<div class="col">
+    <h2>"PREMONISYON"</h2>
+  <iframe src="https://www.youtube.com/embed/S4WMajf_VHo" width="900" height="515" allow="autoplay"></iframe>
+<br>
+<center>
+<div class="card text-white bg-dark mb-3" style="width: 70%;">
+<div class="card-header">
+</div>
+<div class="card-body">
+<h5 class="card-title">A 3 SHOT FILM FESTIVAL ENTRY (3SF)</h5>
+<br>
+<p class="card-text"><center> A vision? A mission? A series of unforeseen events which leds can lead to many different outcome. </center>
+<br>
+</div>
+</center>
+</div>
+<br>
+<br>
+<br>
+
+
+<h1>VLOG
+    <br>
+</h1>
+<h2>Wil Dasovich Trial</h2>
+  <iframe src="https://www.youtube.com/embed/hyJEX-xIgjg" width="900" height="515" allow="autoplay"></iframe>
+<br>
+<center>
+<div class="card text-white bg-dark mb-3" style="width: 70%;">
+<div class="card-header">
+</div>
+<div class="card-body">
+<h5 class="card-title">A short video edit trial</h5>
+<br>
+<p class="card-text"><center>One must take it to prove that they are worthy. </center>
+<br>
+</div>
+</center>
+</div>
+<br>
+<br>
+<br>
+
+
+       </div>
+
+        <br>
+        <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Go to top"><h7>Back to Top</h7></button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <!--END OF VIDEO EDIT SECTION-->
+
+        <h1>WIP (UNDER CONSTRUCTION SECTION)</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+
+          <center>
+        <h8> ILLUSTRATIONS </h8>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+          <div class="row">
+              <div class="col">
+                  <div class="col-sm">
+                      <div class="card text-bg-dark mb-3" style="max-width: 21rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">!!!!!</h5>
+                            <br>
+                            <br>
+                            <img src="https://i.ibb.co/jwBr5kf/under-construction-11.png" alt="skullsik" width="300" height="300"></width>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="card-text"><center>
+                              <a href="" class="btn btn-primary"><h2>!!!!!</h2></a>
+                               </button>
+                                </center></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="col-sm">
+                      <div class="card text-bg-dark mb-3" style="max-width: 21rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">!!!!!</h5>
+                            <img src="https://i.ibb.co/jwBr5kf/under-construction-11.png" alt="skullaaaaaa" width="300px" height="300px"></width>
+                            <br>
+                            <br>
+                            <p class="card-text"><center>
+                              <a href="" class="btn btn-primary"><h2>!!!!!</h2></a>
+                               </button>
+                                </center></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="col-sm">
+                      <div class="card text-bg-dark mb-3" style="max-width: 21rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">!!!!!</h5>
+                            <br>
+                            <br>
+                            <img src="https://i.ibb.co/jwBr5kf/under-construction-11.png" alt="skullsq" width="300px" height="230px"></width>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="card-text"><center>
+                              <a href="" class="btn btn-primary"><h2>!!!!!</h2></a>
+                               </button>
+                                </center></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <br>
+
+
+
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <center>
+            <h8> GRAPHIC DESIGN </h8>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="col-sm">
+                          <div class="card text-bg-dark mb-3" style="max-width: 21rem;">
+                              <div class="card-body">
+                                <h5 class="card-title">!!!!!</h5>
+                                <br>
+                                <br>
+                                <img src="https://i.ibb.co/jwBr5kf/under-construction-11.png" alt="skullsik" width="300" height="300"></width>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="card-text"><center>
+                                  <a href="" class="btn btn-primary"><h2>!!!!!</h2></a>
+                                   </button>
+                                    </center></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="col-sm">
+                          <div class="card text-bg-dark mb-3" style="max-width: 21rem;">
+                              <div class="card-body">
+                                <h5 class="card-title">!!!!!</h5>
+                                <img src="https://i.ibb.co/jwBr5kf/under-construction-11.png" alt="skullaaaaaa" width="300px" height="300px"></width>
+                                <br>
+                                <br>
+                                <p class="card-text"><center>
+                                  <a href="" class="btn btn-primary"><h2>!!!!!</h2></a>
+                                   </button>
+                                    </center></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="col-sm">
+                          <div class="card text-bg-dark mb-3" style="max-width: 21rem;">
+                              <div class="card-body">
+                                <h5 class="card-title">!!!!!</h5>
+                                <br>
+                                <br>
+                                <img src="https://i.ibb.co/jwBr5kf/under-construction-11.png" alt="skullsq" width="300px" height="230px"></width>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="card-text"><center>
+                                  <a href="" class="btn btn-primary"><h2>!!!!!</h2></a>
+                                   </button>
+                                    </center></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br>
+              <br>
+
+
+</body>
+
+
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous">
+</script>
+</html>

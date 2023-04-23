@@ -25,21 +25,32 @@ crossorigin="anonymous"
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,700&family=Goldman&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,700&family=Kdam+Thmor+Pro&display=swap');
+
     h1{
         font-family:"Goldman";
         font-size: 800%;
-        text-align: center;
-        color: rgb(153, 0, 255);
-        vertical-align: center;
-        text-align: center;;
-    }h2{
-        font-family:"Goldman";
-        font-size: 150;
         text-align: center;
         color: rgb(255, 255, 255);
         vertical-align: center;
         text-align: center;;
     }
+    h2{
+        font-family:"Goldman";
+        font-size: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h5{
+        font-family:"Goldman";
+        font-size: 200%;
+        text-align: center;
+        color: rgb(153, 0, 255);
+        vertical-align: center;
+        text-align: center;;
+    }
+
     h3{
         font-family:"Goldman";
         font-size: 100;
@@ -59,6 +70,14 @@ crossorigin="anonymous"
     h7{
         font-family:"Kdam Thmor Pro";
         font-size: 110;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        vertical-align: center;
+        text-align: center;;
+    }
+    h8{
+        font-family:"Goldman";
+        font-size: 300%;
         text-align: center;
         color: rgb(255, 255, 255);
         vertical-align: center;
@@ -93,7 +112,7 @@ crossorigin="anonymous"
         font-size: 150%;
     }
     .btn:hover{
-        background: rgb(136, 17, 37);
+        background: rgb(153, 0, 225);
         transition: .9s;
         color: black;
         border: transparent;
@@ -129,12 +148,45 @@ crossorigin="anonymous"
     }
 
     .carousel { width:1280px; height:720px; }
+    .zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
     </style>
     </style>
 </head>
-
-
-
+<script>
+  $(document).ready(function() {
+    // Generate a random 5-digit alphanumeric code
+    function generateCode() {
+      var code = '';
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      for (var i = 0; i < 5; i++) {
+        code += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      return code;
+    }
+    // Display the generated code when the button is clicked
+    $('#generate-button').click(function() {
+      var code = generateCode();
+      $('#code-display').text(code);
+    });
+  });
+		$(document).ready(function() {
+			// Show or hide the dropdown depending on checkbox state
+			$('#trigger-checkbox').change(function() {
+				if (this.checked) {
+					$('#trigger-dropdown').show();
+				} else {
+					$('#trigger-dropdown').hide();
+				}
+			});
+		});
+</script>
 <body>
   <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
@@ -174,79 +226,170 @@ crossorigin="anonymous"
             <h7> "Post Production is merely a process of discovery." </h7>
             <br>
             <br>
-
             <br>
             <br>
             <iframe width="900" height="515" src="https://www.youtube.com/embed/BbYpVvsDGR4">
             </iframe>
             <br>
-            <br>
-            <br>
+            </center>
 
             <!--2nd vid-->
-            <h7>Hi.</h7>
-            <br>
-            <h7> "SPILLING MY BEANS (FREE VERY SHORT TUTORIAL BY YOURS TRULY)" </h7>
-            <center>
 
+                        <center>
+                        <div class="card text-white bg-dark mb-3" style="width: 35%;">
+                          <div class="card-header">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">AN OFFER</h5>
+
+                            <p class="card-text"><center>
+                              Looking for an affordable and professional video editing service that can help bring your vision to life? As an experienced video editor, I can provide you with top-notch video editing that goes along with your substance. </center>
+                              <br>
+
+                              <center><div class="zoom">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <h2>INTERESTED?</h2>
+
+                                  </button></div>
+                                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h6 class="modal-title fs-5" id="exampleModalLabel">GET COMMISSIONS HERE</h6>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                              </div>
+                                              <center><img src="https://i.ibb.co/fXwDW8s/jinx-was-here.png"
+                                              width="300px" height="300px"></center>
+                                              <div class="modal-body mx-3">
+                                                <div class="md-form mb-5">
+                                                  <i class="fas fa-user prefix grey-text"></i>
+                                                  <input type="text" id="form34" class="form-control validate">
+                                                  <label data-error="wrong" data-success="right" for="form34"><H6>YOUR NAME</H6></label>
+                                                </div>
+                                                <div class="md-form mb-5">
+                                                  <i class="fas fa-envelope prefix grey-text"></i>
+                                                  <input type="email" id="form29" class="form-control validate">
+                                                  <label data-error="wrong" data-success="right" for="form29"><H6>YOUR EMAIL</H6></label>
+                                                </div>
+                                                <div class="md-form mb-5">
+                                                  <i class="fas fa-tag prefix grey-text"></i>
+                                                  <input type="text" id="form32" class="form-control validate">
+                                                  <label data-error="wrong" data-success="right" for="form32"><H6>SUBJECT</H6></label>
+                                                </div>
+                                                <div class="md-form">
+                                                  <i class="fas fa-pencil prefix grey-text"></i>
+                                                  <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                                  <label data-error="wrong" data-success="right" for="form8"><H6>YOUR REQUEST</H6></label>
+                                                </div>
+                                              </div>
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col-md-6 offset-md-3">
+                                                    <!-- Checkbox -->
+                                                    <div class="form-check mt-3">
+                                                      <input class="form-check-input" type="checkbox" value="" id="trigger-checkbox">
+                                                      <label class="form-check-label" for="trigger-checkbox">
+                                                        <h6>I'm not a robot</h6>
+                                                      </label>
+                                                    </div>
+                                                
+                                                      <!-- Dropdown (hidden by default) -->
+                                    <div class="form-group mt-3" id="trigger-dropdown" style="display: none;">
+                                      <label for="example-select"><h6>Type the characters shown in the generated code below.</h6></label>
+                                      <br>
+                                                      <!-- Generate button -->
+                                        <button type="button" class="btn btn-unique" id="generate-button"><h7>Generate</h7></button>
+                                                            <!-- Captcha box -->
+                                                            <br>
+                                                            
+                                                            <div id="captcha-box">
+                                                              <!-- Code display -->
+                                                      
+                                                            <h6><p class="h3 text-center" id="code-display"></p></h6>
+                                          <input type="text" class="form-control" id="example-input" placeholder="Enter code to verify" required>
+                                          <!-- Error message for required field -->
+                                          <div class="invalid-feedback">
+                                          Please enter some text.
+                                          </div>
+                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <br>
+                                            
+                                              <div class="modal-footer d-flex justify-content-center">
+                                                <button class="btn btn-unique"><H7>SEND</H7><i class="fas fa-paper-plane-o ml-1"></i></button>
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><H7>CLOSE</H7></button>
+
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </center>
+
+                            </div>
+                          </center>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+              <center>
+
+
+                <h8 class="card-title">SHORT TUTORIAL</h8>
+                <br>
+
+                <h2 class="card-title">OUT OF BUDGET AND WANT TO VIDEO EDIT YOURSELF?</h2>
             <iframe width="900" height="515" src="https://www.youtube.com/embed/RAcbo_wKObA">
             </iframe>
-            <br>
-            <br>
+            <center>
+              <div class="card text-white bg-dark mb-3" style="width: 35%;">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">CHECK OUT MY SHORT FREE TUTORIAL!</h5>
 
+                  <p class="card-text"><center>
+                    You might also be interested in doing video edits yourself, That's why GSUS class is also available which you can check here in the link below. </center>
+                    <br>
+<div class="zoom">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                      <h7>GSUS MASTERCLASS</h7>
+                    </button></div>
+                  </center>
 
-             <center>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <h2>INTERESTED?</h2>
+                  <div style="min-height: 10px;">
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                      <div class="card card-body" style="width: 500px;">
+                        <center><img src="https://i.pinimg.com/originals/01/48/27/014827e6459bcdd4eb4ffe5c066481a5.gif"
+                           width="100px" height="100px"></center>
+                           <p class="card-text"><center>
+                            <a href="#" class="btn btn-primary"><h7>STILL UNDER CONSTRUCTION!</h7></a>
+                             </button>
 
-                  </button>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h6 class="modal-title fs-5" id="exampleModalLabel">GET COMMISSIONS HERE</h6>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                              </div>
-                              <center><img src="https://i.ibb.co/fXwDW8s/jinx-was-here.png"
-                              width="300px" height="300px"></center>
-                              <div class="modal-body mx-3">
-                                <div class="md-form mb-5">
-                                  <i class="fas fa-user prefix grey-text"></i>
-                                  <input type="text" id="form34" class="form-control validate">
-                                  <label data-error="wrong" data-success="right" for="form34"><H6>YOUR NAME</H6></label>
-                                </div>
-                                <div class="md-form mb-5">
-                                  <i class="fas fa-envelope prefix grey-text"></i>
-                                  <input type="email" id="form29" class="form-control validate">
-                                  <label data-error="wrong" data-success="right" for="form29"><H6>YOUR EMAIL</H6></label>
-                                </div>
-                                <div class="md-form mb-5">
-                                  <i class="fas fa-tag prefix grey-text"></i>
-                                  <input type="text" id="form32" class="form-control validate">
-                                  <label data-error="wrong" data-success="right" for="form32"><H6>SUBJECT</H6></label>
-                                </div>
-                                <div class="md-form">
-                                  <i class="fas fa-pencil prefix grey-text"></i>
-                                  <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-                                  <label data-error="wrong" data-success="right" for="form8"><H6>YOUR REQUEST</H6></label>
-                                </div>
-                              </div>
-                              <div class="modal-footer d-flex justify-content-center">
-                                <button class="btn btn-unique"><H7>SEND</H7><i class="fas fa-paper-plane-o ml-1"></i></button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><H7>CLOSE</H7></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                        <div class="modal-footer">
-                        </div>
-                      </div>
-                    </div>
                   </div>
-            </center>
+                </center>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+    <center>
+            <br>
+            <br>
+          </center>
+
+
             <br>
             <br>
             <br>
@@ -259,9 +402,9 @@ crossorigin="anonymous"
 
             <center><h3>INTERESTED IN ANIMATION AND MANY MORE? </h3></center>
 
-          <p class="card-text"><center>
+          <p class="card-text"><center><div class="zoom">
           <a href="https://ampon-hz.github.io/Portfolio-Bootstrap/" class="btn btn-primary"><h3>CHECK OUT 530HZ</h3></a>
-           </button>
+           </button></div>
            <h7>(I LOVE HER)</h7>
             </center></p></div></div>
 <br>
@@ -362,7 +505,7 @@ crossorigin="anonymous"
             <p>
               gsus@creatives.com
             </p>
-            <p> +639-------20</p>
+            <p> +639 8527 8251</p>
           </div>
           <!-- Grid column -->
           <div class="input-group">
